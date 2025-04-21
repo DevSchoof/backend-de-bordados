@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Cadastro de Produtoss</h1>
+    <h1>Cadastro de Produtos</h1>
     <form method="POST" action="{{url_for('main.produto')}}" >
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
         <br>
-        <label for ="descricao">Descrição:</label>
-        <input type="text" id="descricao" name="descricao" required>
+        <div>
+            <label for ="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" required>
+        </div>
         <br>
-        <label for ="alt">Alt:</label>
-        <input type="text" id="alt" name="alt" required>
+        <div>
+            <label for ="alt">Alt:</label>
+            <input type="text" id="alt" name="alt" required>
+        </div>
         <br>
-        <label for ="url_imagem">URL da Imagem:</label>
-        <input type="text" id="url_imagem" name="url_imagem" required>
-        <br>
+        <div>
+            <label for="url_imagem">Link da Imagem:</label>
+            <input type="text" id="url_imagem" name="url_imagem" placeholder="Cole o link da imagem do Google Drive" required>
+            <a href="https://drive.google.com/drive/folders/1SjgNDcD9mSlJ-WUTHesMPLtPbsWkJWjp" target="_blank">
+                <button type="button">Pesquisar no Google Drive</button>
+            </a>
+        </div><br>
         <button type="submit">Cadastrar</button>
     </form>
 
@@ -38,7 +49,7 @@
     {% endwith %}
 
 
-    <a href="{{ url_for('main.index') }}">ec
+    <a href="{{ url_for('main.index') }}">
         <button>Voltar</button>
     </a>
 </body>

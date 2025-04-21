@@ -1,0 +1,87 @@
+/* filepath: /home/schoof/IFSP/ProgramacaoOrientadaAObjetos/Projetos/back_bordados/app/static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+/* Estilo para o botão de pesquisa no Google Drive */
+a button {
+    background-color: #4285F4; /* Azul do Google */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+a button:hover {
+    background-color: #357AE8; /* Azul mais escuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid #f1f1f1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+}
+label {
+    font-size: 18px;
+   
+}
+
+input[type="text"] {
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px; 
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Verde */
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 120px;
+}
+
+
+form div {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o label e o input */
+    gap: 10px; /* Espaçamento horizontal entre o label e o input */
+}
+
+label {
+    width: 150px; /* Define uma largura fixa para os labels */
+    text-align: center; /* Alinha o texto do label à direita */
+}
